@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_import, prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
+// ignore_for_file: unnecessary_import, prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, avoid_print
 
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -112,7 +112,7 @@ class HomeScreen extends StatelessWidget {
                 )
               ],
             ),
-          ),
+          ),  
           SizedBox(height: 10),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
