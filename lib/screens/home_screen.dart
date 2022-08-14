@@ -1,8 +1,6 @@
 // ignore_for_file: unnecessary_import, prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:ticket_book/screens/hotel_screens.dart';
 import 'package:ticket_book/screens/ticket_view.dart';
 import 'package:ticket_book/utils/app_info_list.dart';
@@ -46,7 +44,7 @@ class HomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage('assets/1002204.jpg')),
+                            image: AssetImage('assets/images.png')),
                       ),
                     ),
                   ],

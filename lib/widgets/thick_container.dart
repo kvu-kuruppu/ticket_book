@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class ThichContainer extends StatelessWidget {
-  const ThichContainer({Key? key}) : super(key: key);
+  final bool? isColor;
+  const ThichContainer({Key? key, this.isColor}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +10,8 @@ class ThichContainer extends StatelessWidget {
       padding: const EdgeInsets.all(3.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(width: 2.5, color: Colors.white),
+        border: Border.all(
+            width: 2.5, color: isColor == null ? Colors.white : Colors.black),
       ),
     );
   }
