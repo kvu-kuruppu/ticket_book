@@ -43,6 +43,9 @@ class TicketScreen extends StatelessWidget {
                     ticket: ticketList[0],
                     isColor: false,
                   )),
+              SizedBox(
+                height: AppLayout.getHeight(1),
+              ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
                 margin: EdgeInsets.only(left: 20.5, right: 20),
@@ -172,7 +175,9 @@ class TicketScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: AppLayout.getHeight(25),),
+              SizedBox(
+                height: AppLayout.getHeight(25),
+              ),
               Container(
                   margin: EdgeInsets.only(right: 20),
                   child: TicketView(
